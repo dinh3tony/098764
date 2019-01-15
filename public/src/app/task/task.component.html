@@ -1,0 +1,9 @@
+<div>
+      <img src="{{onButtonShow.url}}">
+      <div class='right'>
+        <p>Average rating:{{onButtonShow.average}}</p>
+        <div class='comments' *ngFor="let x of onButtonShow.comment">
+        <p>{{x.content}}</p>
+        <p>{{x.rating}}</p>
+      </div>
+</div>
